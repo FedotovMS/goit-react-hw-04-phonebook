@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Filter = ({ value, onSearch }) => (
+const Filter = ({ filter, onSearch }) => (
   <input
     type="text"
     name="filter"
-    value={value || ''}
+    value={filter || ''}
     onChange={onSearch}
     placeholder="Search contacts"
   />
